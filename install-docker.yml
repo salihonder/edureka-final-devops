@@ -3,6 +3,7 @@
   hosts: localhost
   connection: local
   become: yes
+  remote_user: ansible
   
   vars:
     docker_pkg_dependencies:
