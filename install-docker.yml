@@ -17,6 +17,10 @@
   tasks:
     - name: Example task
       command: whoami
+      register: result
+    - name: Print whoami output
+      debug:
+        msg: "{{ result.stdout }}"
     - name: Ensure /etc/apt/keyrings exists
       file:
         path: /etc/apt/keyrings
