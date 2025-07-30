@@ -4,6 +4,7 @@
   connection: local
   become: yes
   become_user: root
+  become_method: enable
   
   vars:
     docker_pkg_dependencies:
