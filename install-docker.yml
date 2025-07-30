@@ -14,6 +14,8 @@
       - lsb-release
 
   tasks:
+    - name: Example task
+      command: whoami
     - name: Ensure /etc/apt/keyrings exists
       file:
         path: /etc/apt/keyrings
